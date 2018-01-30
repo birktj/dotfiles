@@ -1,0 +1,7 @@
+[user]
+	name = Birk Tjelmeland
+	email = birktjelmeland@yahoo.no
+[core]
+	editor = nvim
+[credential]
+	helper = store
