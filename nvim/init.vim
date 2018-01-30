@@ -1,6 +1,6 @@
 set termguicolors
 set background=dark
-colorscheme pencil
+colorscheme spacemacs-theme
 syntax enable
 let g:airline_theme='bubblegum'
 

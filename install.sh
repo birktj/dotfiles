@@ -8,5 +8,6 @@ ln -sfn ${BASEDIR}/nvim ~/.config/nvim
 # git
 ln -sfn ${BASEDIR}/git/.gitconfig ~/.gitconfig
 
-
+# ghci
+ln -snf ${BASEDIR}/ghci/ghci.conf ~/.ghc/ghci.conf
 
