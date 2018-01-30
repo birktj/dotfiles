@@ -6,7 +6,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ln -sfn ${BASEDIR}/nvim ~/.config/nvim
 
 # git
-ln -sfn ${BASEDIR}/gitconfig ~/.gitconfig
+ln -sfn ${BASEDIR}/git/.gitconfig ~/.gitconfig
 
 
 
