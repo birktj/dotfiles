@@ -32,8 +32,13 @@ autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 "set autochdir
 
-
+let g:haskell_indent_disable = 1
 
 let g:deoplete#enable_at_startup = 1
+set completeopt-=preview
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-5.0/lib/libclang.so"
+
+let g:deoplete#sources#clang#clang_header = "/usr/lib/llvm-5.0/lib/clang"
 

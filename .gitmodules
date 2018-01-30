@@ -13,3 +13,6 @@
 [submodule "nvim/pack/syntax/start/haskell-vim"]
 	path = nvim/pack/syntax/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "nvim/pack/autocomplete/start/deoplete-clang"]
+	path = nvim/pack/autocomplete/start/deoplete-clang
+	url = https://github.com/zchee/deoplete-clang
