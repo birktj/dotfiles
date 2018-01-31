@@ -4,6 +4,7 @@ set background=dark
 colorscheme spacemacs-theme
 syntax enable
 let g:airline_theme='bubblegum'
+hi MatchParen guifg=#68727c guibg=#292b2e 
 
 "Indention settings
 set tabstop=4
