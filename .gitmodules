@@ -16,3 +16,9 @@
 [submodule "nvim/pack/autocomplete/start/deoplete-clang"]
 	path = nvim/pack/autocomplete/start/deoplete-clang
 	url = https://github.com/zchee/deoplete-clang
+[submodule "nvim/pack/utils/start/vim-pandoc"]
+	path = nvim/pack/utils/start/vim-pandoc
+	url = https://github.com/vim-pandoc/vim-pandoc
+[submodule "nvim/pack/syntax/start/vim-pandoc-syntax"]
+	path = nvim/pack/syntax/start/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax
