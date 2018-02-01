@@ -44,6 +44,10 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-5.0/lib/libclang.so"
 let g:deoplete#sources#clang#clang_header = "/usr/lib/llvm-5.0/lib/clang"
 
+"Rust autocomplete settings
+let g:deoplete#sources#rust#racer_binary='/home/birk/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path='/home/birk/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+
 "Pandoc settings
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#command#autoexec_on_writes = 1
