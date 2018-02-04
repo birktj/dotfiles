@@ -28,3 +28,6 @@
 [submodule "nvim/pack/syntax/start/vim-toml"]
 	path = nvim/pack/syntax/start/vim-toml
 	url = https://github.com/cespare/vim-toml
+[submodule "nvim/pack/syntax/start/vim-mustache-handlebars"]
+	path = nvim/pack/syntax/start/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
