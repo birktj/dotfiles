@@ -31,3 +31,6 @@
 [submodule "nvim/pack/syntax/start/vim-mustache-handlebars"]
 	path = nvim/pack/syntax/start/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule "nvim/pack/syntax/start/vim-stylus"]
+	path = nvim/pack/syntax/start/vim-stylus
+	url = https://github.com/wavded/vim-stylus
