@@ -34,3 +34,6 @@
 [submodule "nvim/pack/syntax/start/vim-stylus"]
 	path = nvim/pack/syntax/start/vim-stylus
 	url = https://github.com/wavded/vim-stylus
+[submodule "nvim/pack/utils/start/vim-startify"]
+	path = nvim/pack/utils/start/vim-startify
+	url = https://github.com/mhinz/vim-startify
