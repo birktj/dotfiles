@@ -1,10 +1,11 @@
 "Theme settings
 set termguicolors
 set background=dark
-colorscheme spacemacs-theme
+colorscheme nord "spacemacs-theme
 syntax enable
-let g:airline_theme='bubblegum'
-hi MatchParen guifg=#68727c guibg=#292b2e 
+"let g:airline_theme='bubblegum'
+"hi MatchParen guifg=#68727c guibg=#292b2e 
+let g:nord_italic = 1
 
 "Indention settings
 set tabstop=4
