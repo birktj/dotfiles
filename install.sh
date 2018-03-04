@@ -11,3 +11,11 @@ ln -sfn ${BASEDIR}/git/.gitconfig ~/.gitconfig
 # ghci
 ln -snf ${BASEDIR}/ghci/ghci.conf ~/.ghc/ghci.conf
 
+# alacritty
+ln -snf ${BASEDIR}/alacritty ~/.config/alacritty
+
+# polybar
+ln -snf ${BASEDIR}/polybar ~/.config/polybar
+
+# xmonad
+ln -snf ${BASEDIR}/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
