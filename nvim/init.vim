@@ -53,3 +53,7 @@ let g:deoplete#sources#rust#rust_source_path='/home/birk/.rustup/toolchains/stab
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#command#autoexec_on_writes = 1
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
+
+"Tab navigation
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>

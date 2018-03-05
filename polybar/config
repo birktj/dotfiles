@@ -85,7 +85,9 @@ label = %title:0:40:...%
 type = internal/xworkspaces
 
 icon-0 = 1; 
-icon-1 = 2; 
+icon-1 = 2; 
+icon-3 = 2; 
+icon-4 = 3; 
 icon-default =  
 
 format = <label-state>
@@ -266,6 +268,7 @@ ramp-capacity-0 = 
 ramp-capacity-1 =  
 ramp-capacity-2 =  
 ramp-capacity-3 =  
+ramp-capacity-4 =  
 ramp-capacity-foreground = ${colors.foreground}
 
 animation-charging-0 =  
