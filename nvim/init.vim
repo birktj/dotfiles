@@ -6,6 +6,7 @@ syntax enable
 "let g:airline_theme='bubblegum'
 "hi MatchParen guifg=#68727c guibg=#292b2e 
 let g:nord_italic = 1
+highlight Conceal ctermbg=2E3440 guibg=2E3440
 
 "Indention settings
 set tabstop=4
