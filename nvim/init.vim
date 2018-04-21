@@ -42,8 +42,8 @@ set completeopt-=preview
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 "Clang autocomplete settings
-let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-5.0/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header = "/usr/lib/llvm-5.0/lib/clang"
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 
 "Rust autocomplete settings
 let g:deoplete#sources#rust#racer_binary='/home/birk/.cargo/bin/racer'
@@ -51,7 +51,7 @@ let g:deoplete#sources#rust#rust_source_path='/home/birk/.rustup/toolchains/stab
 
 "Pandoc settings
 let g:pandoc#command#latex_engine = "pdflatex"
-let g:pandoc#command#autoexec_on_writes = 1
+let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
 
 "Tab navigation
