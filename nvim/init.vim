@@ -50,6 +50,9 @@ let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 let g:deoplete#sources#rust#racer_binary='/home/birk/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path='/home/birk/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
+"Rustfmt on save
+let g:rustfmt_autosave = 1
+
 "Pandoc settings
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#command#autoexec_on_writes = 0
