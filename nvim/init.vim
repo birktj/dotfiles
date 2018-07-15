@@ -39,7 +39,7 @@ let g:haskell_indent_disable = 1
 
 "Autocomplete settings
 let g:deoplete#enable_at_startup = 1
-set completeopt-=preview
+" set completeopt-=preview
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 "Clang autocomplete settings
@@ -47,8 +47,9 @@ let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
 let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 
 "Rust autocomplete settings
-let g:deoplete#sources#rust#racer_binary='/home/birk/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/home/birk/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+set hidden
+let g:racer_cmd = "/home/birk/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
 
 "Rustfmt on save
 let g:rustfmt_autosave = 1
