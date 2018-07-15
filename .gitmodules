@@ -22,9 +22,6 @@
 [submodule "nvim/pack/syntax/start/vim-pandoc-syntax"]
 	path = nvim/pack/syntax/start/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax
-[submodule "nvim/pack/autocomplete/start/deoplete-rust"]
-	path = nvim/pack/autocomplete/start/deoplete-rust
-	url = https://github.com/sebastianmarkow/deoplete-rust
 [submodule "nvim/pack/syntax/start/vim-toml"]
 	path = nvim/pack/syntax/start/vim-toml
 	url = https://github.com/cespare/vim-toml
