@@ -40,3 +40,6 @@
 [submodule "nvim/pack/lang/rust.vim"]
 	path = nvim/pack/lang/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "nvim/pack/autocomplete/start/vim-racer"]
+	path = nvim/pack/autocomplete/start/vim-racer
+	url = https://github.com/racer-rust/vim-racer
