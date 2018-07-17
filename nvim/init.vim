@@ -39,7 +39,7 @@ let g:haskell_indent_disable = 1
 
 "Autocomplete settings
 let g:deoplete#enable_at_startup = 1
-" set completeopt-=preview
+set completeopt-=preview
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 "Clang autocomplete settings
