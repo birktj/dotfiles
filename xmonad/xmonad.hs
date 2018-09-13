@@ -8,7 +8,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Layout.Gaps
 import XMonad.Layout.NoBorders
-import XMonad.Layout.Fullscreen
+import XMonad.Layout.Fullscreen hiding (fullscreenEventHook)
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
 import XMonad.Util.NamedWindows
@@ -21,8 +21,8 @@ import Control.Monad
 
 import qualified Data.Map as M
 
-myLayoutHook = smartBorders . gaps [(U, 24)] . spacing 10 $ layoutHook def
-myEventHook  = handleEventHook def
+myLayoutHook = fullscreenFocus . smartBorders . gaps [(U, 24)] . spacing 10 $ layoutHook def
+myEventHook  = handleEventHook def <+> fullscreenEventHook
 myLogHook = logHook def
 myStartupHook = do
     startupHook def
@@ -45,6 +45,7 @@ main = do
             , handleEventHook    = myEventHook
             , startupHook        = myStartupHook
             , logHook            = myLogHook
+            , manageHook         = manageHook def <+> fullscreenManageHook
             , keys               = myKeys
             , normalBorderColor  = "#2e3440"
             , focusedBorderColor = "#657b83" }
