@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/birk/dev/uib/inf101/sem2/src'
-let g:netrw_dirhist_2='/home/birk/dev/uib/inf101/sem2'
-let g:netrw_dirhist_3='/home/birk/dev/uib/inf101/sem2/src'
-let g:netrw_dirhist_4='/home/birk/dev/uib/inf101/sem2/src/inf101'
-let g:netrw_dirhist_5='/home/birk/dev/uib/inf101/sem2/src/inf101/v18'
-let g:netrw_dirhist_6='/home/birk/dev/uib/inf101/sem2/src/inf101/v18/sem2'
-let g:netrw_dirhist_7='/home/birk/dev/uib/inf101/sem2/src/inf101/v18/sem2/utils'
-let g:netrw_dirhist_8='/home/birk/dev/uib/inf237/stringmatching'
-let g:netrw_dirhist_9='/home/birk/dev/uib/progkonk/tradingroute/data/sample'
+let g:netrw_dirhist_cnt =0

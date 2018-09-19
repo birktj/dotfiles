@@ -30,9 +30,14 @@ nnoremap <leader><space> :nohlsearch<cr>
 
 "Fold settings
 set foldenable
+set foldmethod=syntax
 set foldlevelstart=10
-autocmd InsertLeave,WinEnter * setlocal foldmethod=syntax
-autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
+set foldlevel=10
+set sessionoptions+=folds
+autocmd BufWinLeave *.* mkview!
+autocmd BufWinEnter *.* silent! loadview 
+"autocmd InsertLeave,WinEnter * setlocal foldmethod=syntax
+"autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 "Hasekell indent
 let g:haskell_indent_disable = 1
@@ -51,8 +56,16 @@ set hidden
 let g:racer_cmd = "/home/birk/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 
-"Rustfmt on save
-let g:rustfmt_autosave = 1
+"Rustfmt on save | disabled because is anyoing
+"let g:rustfmt_autosave = 1
+"Fix rustmft opens all folds
+function MyRustfmt()
+    mkview!
+    RustFmt
+    silent! loadview
+endfunction
+
+" autocmd BufWritePre *.rs :call MyRustfmt()
 
 "Pandoc settings
 let g:pandoc#command#latex_engine = "pdflatex"
