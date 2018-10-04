@@ -43,3 +43,6 @@
 [submodule "nvim/pack/autocomplete/start/vim-racer"]
 	path = nvim/pack/autocomplete/start/vim-racer
 	url = https://github.com/racer-rust/vim-racer
+[submodule "nvim/pack/utils/start/nerdtree"]
+	path = nvim/pack/utils/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree

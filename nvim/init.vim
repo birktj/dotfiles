@@ -75,3 +75,6 @@ let g:pandoc#command#autoexec_command = "Pandoc pdf"
 "Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+"NERDtree
+map <C-o> :NERDTreeToggle<CR>
