@@ -65,6 +65,9 @@ function MyRustfmt()
     silent! loadview
 endfunction
 
+let g:ale_linters = {'rust': ['rls']}
+let g:ale_rust_rls_toolchain = ''
+
 " autocmd BufWritePre *.rs :call MyRustfmt()
 
 "Pandoc settings
