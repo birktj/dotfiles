@@ -49,3 +49,6 @@
 [submodule "nvim/pack/utils/start/ale"]
 	path = nvim/pack/utils/start/ale
 	url = https://github.com/w0rp/ale
+[submodule "nvim/pack/syntax/start/vim-fish"]
+	path = nvim/pack/syntax/start/vim-fish
+	url = https://github.com/dag/vim-fish
