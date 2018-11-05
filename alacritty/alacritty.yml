@@ -12,7 +12,7 @@ env:
   # Note that some xterm terminfo databases don't declare support for italics.
   # You can verify this by checking for the presence of `smso` and `sitm` in
   # `infocmp xterm-256color`.
-    TERM: screen-256color # TODO: remove this on new neovim version
+    TERM: xterm-256color # TODO: remove this on new neovim version
 
 # Window dimensions in character columns and lines
 # Falls back to size specified by window manager if set to 0x0.
