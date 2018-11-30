@@ -52,3 +52,6 @@
 [submodule "nvim/pack/syntax/start/vim-fish"]
 	path = nvim/pack/syntax/start/vim-fish
 	url = https://github.com/dag/vim-fish
+[submodule "nvim/pack/syntax/start/vim-glsl"]
+	path = nvim/pack/syntax/start/vim-glsl
+	url = https://github.com/tikhomirov/vim-glsl
