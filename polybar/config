@@ -51,9 +51,10 @@ font-1 = Font\ Awesome\ 5\ Free;2
 font-2 = Font\ Awesome\ 5\ Free:style=Solid;2
 font-3 = Font\ Awesome\ 5\ Brands;2
 
-modules-left = workspaces xwindow
-modules-center = date
-modules-right = wlan xkeyboard xbacklight volume battery
+modules-left = workspaces 
+modules-center = xwindow
+#modules-center = date
+modules-right = wlan xkeyboard xbacklight volume battery date
 ;modules-right = powermenu
 
 module-margin = 2
@@ -96,26 +97,26 @@ label = %title:0:40:...%
 [module/workspaces]
 type = internal/xworkspaces
 
-icon-0 = 1;"  "
-icon-1 = 2;"  "
-icon-2 = 3;"  "
-icon-3 = 4;"  "
-icon-4 = 5;"  "
-icon-default ="  "
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3; 
+icon-3 = 4;
+icon-4 = 5;
+icon-default =
 
 format = <label-state>
 
-label-active = "%icon%"
+label-active ="  %icon%  "
 #label-active-underline = #fff
 label-active-foreground = ${colors.foreground-alt}
 label-active-background = ${colors.background-alt}
-label-active-margin = 1
-label-occupied = "%icon%"
-label-occupied-margin = 1
-label-urgent = "%icon%"
-label-urgent-margin = 1
-label-empty = "%icon%"
-label-empty-margin = 1
+label-active-margin = 0
+label-occupied ="  %icon%  "
+label-occupied-margin = 0
+label-urgent ="  %icon%  "
+label-urgent-margin = 0
+label-empty ="  %icon%  "
+label-empty-margin = 0
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -228,17 +229,19 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date =""
+date-alt = " %Y-%m-%d "
 
-time = %H:%M
-time-alt = %H:%M
+time =" %H:%M "
+time-alt =" %H:%M "
 
-format-prefix =  
-format-prefix-foreground = ${colors.foreground}
+#format-prefix =  
+#format-prefix-foreground = ${colors.foreground}
 ;format-underline = #0a6cf5
 
-label = %date% %time%
+label =" %date%%time% "
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
 
 [module/volume]
 type = internal/volume
