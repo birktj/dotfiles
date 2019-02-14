@@ -19,3 +19,7 @@ ln -snf ${BASEDIR}/polybar ~/.config/polybar
 
 # xmonad
 ln -snf ${BASEDIR}/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
+
+# fish
+ln -snf ${BASEDIR}/fish/config.fish ~/.config/fish/config.fish
+ln -snf ${BASEDIR}/fish/functions ~/.config/fish/functions
