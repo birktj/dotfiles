@@ -4,7 +4,7 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty it self.
-env:
+#env:
   # TERM env customization.
   #
   # If this property is not set, alacritty will set it to xterm-256color.
@@ -12,7 +12,7 @@ env:
   # Note that some xterm terminfo databases don't declare support for italics.
   # You can verify this by checking for the presence of `smso` and `sitm` in
   # `infocmp xterm-256color`.
-    TERM: xterm-256color # TODO: remove this on new neovim version
+  #TERM: xterm-256color # TODO: remove this on new neovim version
 
 # Window dimensions in character columns and lines
 # Falls back to size specified by window manager if set to 0x0.
@@ -22,8 +22,8 @@ window:
         columns: 80
         lines: 24
     padding:
-        x: 20
-        y: 20
+        x: 10
+        y: 10
 
 # Scrollback buffer
 scrollback:
@@ -79,7 +79,7 @@ font:
     style: Italic
 
   # Point size of the font
-  size: 9.0
+  size: 8.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.

@@ -58,12 +58,6 @@ let g:racer_experimental_completer = 1
 
 "Rustfmt on save | disabled because is anyoing
 "let g:rustfmt_autosave = 1
-"Fix rustmft opens all folds
-function MyRustfmt()
-    mkview!
-    RustFmt
-    silent! loadview
-endfunction
 
 let g:ale_linters = {'rust': ['rls']}
 let g:ale_rust_rls_toolchain = ''
@@ -79,5 +73,25 @@ let g:pandoc#command#autoexec_command = "Pandoc pdf"
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-"NERDtree
+"Split navigation
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+"NERDTree
 map <C-o> :NERDTreeToggle<CR>
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+let g:netrw_dirhistmax = 0
+
+"FZF
+let $FZF_DEFAULT_COMMAND = 'rg --files'
+map <C-p> :FZF<CR>
+
+"Directory settings
+set noautochdir

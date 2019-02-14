@@ -21,7 +21,7 @@ import Control.Monad
 
 import qualified Data.Map as M
 
-myLayoutHook = fullscreenFocus . smartBorders . gaps [(U, 24)] . spacing 10 $ layoutHook def
+myLayoutHook = fullscreenFocus . smartBorders . gaps [(U, 24)] . spacing 5 $ layoutHook def
 myEventHook  = handleEventHook def <+> fullscreenEventHook
 myLogHook = logHook def
 myStartupHook = do
