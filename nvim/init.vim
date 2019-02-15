@@ -59,8 +59,9 @@ let g:racer_experimental_completer = 1
 "Rustfmt on save | disabled because is anyoing
 "let g:rustfmt_autosave = 1
 
-let g:ale_linters = {'rust': ['rls']}
-let g:ale_rust_rls_toolchain = ''
+" Commeted out becuse of errors
+"let g:ale_linters = {'rust': ['rls']}
+"let g:ale_rust_rls_toolchain = ''
 
 " autocmd BufWritePre *.rs :call MyRustfmt()
 
