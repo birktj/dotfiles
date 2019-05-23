@@ -4,18 +4,9 @@
 [submodule "nvim/pack/colorscheme/start/spacemacs-theme.vim"]
 	path = nvim/pack/colorscheme/start/spacemacs-theme.vim
 	url = https://github.com/colepeters/spacemacs-theme.vim
-[submodule "nvim/pack/autocomplete/start/deoplete.nvim"]
-	path = nvim/pack/autocomplete/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim
-[submodule "nvim/pack/autocomplete/start/neco-ghc"]
-	path = nvim/pack/autocomplete/start/neco-ghc
-	url = https://github.com/eagletmt/neco-ghc
 [submodule "nvim/pack/syntax/start/haskell-vim"]
 	path = nvim/pack/syntax/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
-[submodule "nvim/pack/autocomplete/start/deoplete-clang"]
-	path = nvim/pack/autocomplete/start/deoplete-clang
-	url = https://github.com/zchee/deoplete-clang
 [submodule "nvim/pack/utils/start/vim-pandoc"]
 	path = nvim/pack/utils/start/vim-pandoc
 	url = https://github.com/vim-pandoc/vim-pandoc
@@ -40,15 +31,9 @@
 [submodule "nvim/pack/lang/rust.vim"]
 	path = nvim/pack/lang/rust.vim
 	url = https://github.com/rust-lang/rust.vim
-[submodule "nvim/pack/autocomplete/start/vim-racer"]
-	path = nvim/pack/autocomplete/start/vim-racer
-	url = https://github.com/racer-rust/vim-racer
 [submodule "nvim/pack/utils/start/nerdtree"]
 	path = nvim/pack/utils/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "nvim/pack/utils/start/ale"]
-	path = nvim/pack/utils/start/ale
-	url = https://github.com/w0rp/ale
 [submodule "nvim/pack/syntax/start/vim-fish"]
 	path = nvim/pack/syntax/start/vim-fish
 	url = https://github.com/dag/vim-fish
