@@ -42,28 +42,16 @@ autocmd BufWinEnter *.* silent! loadview
 "Hasekell indent
 let g:haskell_indent_disable = 1
 
-"Autocomplete settings
-let g:deoplete#enable_at_startup = 1
-set completeopt-=preview
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-"Clang autocomplete settings
-let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
-
-"Rust autocomplete settings
-set hidden
-let g:racer_cmd = "/home/birk/.cargo/bin/racer"
-let g:racer_experimental_completer = 1
-
 "Rustfmt on save | disabled because is anyoing
 "let g:rustfmt_autosave = 1
 
-" Commeted out becuse of errors
-"let g:ale_linters = {'rust': ['rls']}
-"let g:ale_rust_rls_toolchain = ''
+"Autocomplete settings
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
-" autocmd BufWritePre *.rs :call MyRustfmt()
 
 "Pandoc settings
 let g:pandoc#command#latex_engine = "pdflatex"
