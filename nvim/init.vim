@@ -45,12 +45,17 @@ let g:haskell_indent_disable = 1
 "Rustfmt on save | disabled because is anyoing
 "let g:rustfmt_autosave = 1
 
-"Autocomplete settings
+"Set leader to space
+let mapleader = "\<Space>"
+
+"coc.vim settings
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+nmap <leader>rn <Plug>(coc-rename)
 
 
 "Pandoc settings
