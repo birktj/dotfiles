@@ -28,7 +28,8 @@ myStartupHook = do
     startupHook def
     setFullscreenSupported
     spawnOnce "polybar top"
-    setWMName "LG3D"
+    spawnOnce "dunst"
+    -- setWMName "LG3D"
 
 myKeys = (\c -> M.fromList [ ((0, xF86XK_AudioLowerVolume), spawn "amixer -q sset Master 2%-")
                            , ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q sset Master 2%+")

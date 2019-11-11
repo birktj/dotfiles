@@ -30,3 +30,7 @@ ln -snf ${BASEDIR}/bash/bash_profile ~/.bash_profile
 
 # xorg
 ln -snf ${BASEDIR}/xorg/xinitrc ~/.xinitrc
+
+# dunst
+mkdir ~/.config/dunst
+ln -snf ${BASEDIR}/dunst/dunstrc ~/.config/dunst/dunstrc
