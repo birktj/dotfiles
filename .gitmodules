@@ -40,9 +40,6 @@
 [submodule "nvim/pack/syntax/start/vim-glsl"]
 	path = nvim/pack/syntax/start/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl
-[submodule "nvim/pack/utils/start/coc.nvim"]
-	path = nvim/pack/utils/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
 [submodule "nvim/pack/syntax/start/vim-gluon"]
 	path = nvim/pack/syntax/start/vim-gluon
 	url = https://github.com/gluon-lang/vim-gluon
