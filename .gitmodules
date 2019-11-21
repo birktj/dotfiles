@@ -29,7 +29,7 @@
 	path = nvim/pack/colorscheme/start/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim
 [submodule "nvim/pack/lang/rust.vim"]
-	path = nvim/pack/lang/rust.vim
+	path = nvim/pack/lang/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
 [submodule "nvim/pack/utils/start/nerdtree"]
 	path = nvim/pack/utils/start/nerdtree
