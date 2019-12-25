@@ -12,16 +12,18 @@ import XMonad.Layout.Fullscreen hiding (fullscreenEventHook)
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
 import XMonad.Util.NamedWindows
+import XMonad.Actions.Warp
 import qualified XMonad.StackSet as W
 import Graphics.X11.ExtraTypes.XF86
 
+import Data.Ratio
 import Data.List
 import Data.Function
 import Control.Monad
 
 import qualified Data.Map as M
 
-myLayoutHook = fullscreenFocus . smartBorders . gaps [(U, 24)] . spacing 5 $ layoutHook def
+myLayoutHook = fullscreenFocus . lessBorders Screen . spacing 5 . gaps [(U, 24)] $ layoutHook def
 myEventHook  = handleEventHook def <+> fullscreenEventHook
 myLogHook = logHook def
 myStartupHook = do
@@ -31,12 +33,14 @@ myStartupHook = do
     spawnOnce "dunst"
     -- setWMName "LG3D"
 
-myKeys = (\c -> M.fromList [ ((0, xF86XK_AudioLowerVolume), spawn "amixer -q sset Master 2%-")
+myKeys = (\c -> M.fromList $ [ ((0, xF86XK_AudioLowerVolume), spawn "amixer -q sset Master 2%-")
                            , ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q sset Master 2%+")
                            , ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute 0 toggle")
                            , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight -inc 10")
                            , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -dec 10")
-                           , ((modMask c, xK_p), spawn "dmenu_run -l 10 -w 500 -h 30 -fn \"Source Code Pro:size=13\" -p \"> \" -dim 0.5 -o 0.9 -x 710 -y 390 -nb \"#2e3440\" -nf \"#d8dee9\" -sb \"#d8dee9\" -sf \"#2e3440\"") ]) <+> keys def
+                           , ((modMask c, xK_p), spawn "dmenu_run -l 10 -w 500 -h 30 -fn \"Source Code Pro:size=13\" -p \"> \" -dim 0.5 -o 0.9 -x 710 -y 390 -nb \"#2e3440\" -nf \"#d8dee9\" -sb \"#d8dee9\" -sf \"#2e3440\"") ]
+                           ++ [((modMask c, key), warpToScreen sc (1%2) (1%2))
+                           | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]]) <+> keys def
 
 main = do
     xmonad . ewmh . docks $ def
