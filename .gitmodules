@@ -43,3 +43,6 @@
 [submodule "nvim/pack/syntax/start/vim-gluon"]
 	path = nvim/pack/syntax/start/vim-gluon
 	url = https://github.com/gluon-lang/vim-gluon
+[submodule "nvim/pack/lang/start/kotlin-vim"]
+	path = nvim/pack/lang/start/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim
