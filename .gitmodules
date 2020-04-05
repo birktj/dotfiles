@@ -46,3 +46,6 @@
 [submodule "nvim/pack/lang/start/kotlin-vim"]
 	path = nvim/pack/lang/start/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
+[submodule "nvim/pack/syntax/start/idris-vim"]
+	path = nvim/pack/syntax/start/idris-vim
+	url = https://github.com/idris-hackers/idris-vim
