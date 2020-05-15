@@ -1,6 +1,6 @@
 [user]
 	name = Birk Tjelmeland
-	email = birktjelmeland@yahoo.no
+	email = git@birktj.no
 [core]
 	editor = nvim
 [credential]
