@@ -49,6 +49,7 @@ let g:haskell_indent_disable = 1
 let g:tex_flavor='latex'
 "Detect .htex as latex
 autocmd! BufRead,BufNewFile *.htex     setfiletype tex
+let g:tex_noindent_env = 'document\|verbatim\|lstlisting\|writehaskell\|diagram'
 
 
 "Set leader to space
