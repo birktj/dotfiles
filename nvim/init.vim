@@ -47,6 +47,9 @@ let g:haskell_indent_disable = 1
 
 "Detect .tex as latex
 let g:tex_flavor='latex'
+"Detect .htex as latex
+autocmd! BufRead,BufNewFile *.htex     setfiletype tex
+
 
 "Set leader to space
 let mapleader = "\<Space>"
