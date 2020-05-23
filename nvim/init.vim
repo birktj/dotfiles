@@ -61,6 +61,7 @@ let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
 let g:pandoc#spell#enabled = 0
 let g:pandoc#syntax#conceal#use = 0
+set conceallevel=0
 
 "Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
