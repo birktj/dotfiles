@@ -59,9 +59,8 @@ let mapleader = "\<Space>"
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
-let g:pandoc#filetypes#pandoc_markdown = 0
 let g:pandoc#spell#enabled = 0
+let g:pandoc#syntax#conceal#use = 0
 
 "Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
