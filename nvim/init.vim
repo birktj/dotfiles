@@ -42,6 +42,9 @@ autocmd BufWinEnter *.* silent! loadview
 "autocmd InsertLeave,WinEnter * setlocal foldmethod=syntax
 "autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
+"Vertical column
+let &colorcolumn="81,".join(range(120,999),",")
+
 "Hasekell indent
 let g:haskell_indent_disable = 1
 
