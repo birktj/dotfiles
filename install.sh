@@ -32,5 +32,9 @@ ln -snf ${BASEDIR}/bash/bash_profile ~/.bash_profile
 ln -snf ${BASEDIR}/xorg/xinitrc ~/.xinitrc
 
 # dunst
-mkdir ~/.config/dunst
+mkdir -p ~/.config/dunst
 ln -snf ${BASEDIR}/dunst/dunstrc ~/.config/dunst/dunstrc
+
+# zathura
+mkdir -p ~/.config/zathura
+ln -snf ${BASEDIR}/zathura/zathurarc ~/.config/zathura/zathurarc
