@@ -73,7 +73,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
 "NERDTree
-map <C-o> :NERDTreeToggle<CR>
+map <leader>o :NERDTreeToggle<CR>
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
