@@ -38,12 +38,12 @@ set foldlevelstart=10
 set foldlevel=10
 set sessionoptions+=folds
 autocmd BufWinLeave *.* mkview!
-autocmd BufWinEnter *.* silent! loadview 
+"autocmd BufWinEnter *.* silent! loadview 
 "autocmd InsertLeave,WinEnter * setlocal foldmethod=syntax
 "autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
 "Vertical column
-let &colorcolumn="81,".join(range(120,999),",")
+"let &colorcolumn="81,".join(range(120,999),",")
 
 "Hasekell indent
 let g:haskell_indent_disable = 1
@@ -90,5 +90,16 @@ let g:netrw_dirhistmax = 0
 let $FZF_DEFAULT_COMMAND = 'rg --files'
 map <C-p> :FZF<CR>
 
+if has('nvim') && !exists('g:fzf_layout')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+endif
+
 "Directory settings
 set noautochdir
+
+"Statusline
+set laststatus=2
+set statusline=%#Line#\ %f\ %5*%=%#Line#\ %l,\ %c\ 
+
