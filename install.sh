@@ -38,3 +38,6 @@ ln -snf ${BASEDIR}/dunst/dunstrc ~/.config/dunst/dunstrc
 # zathura
 mkdir -p ~/.config/zathura
 ln -snf ${BASEDIR}/zathura/zathurarc ~/.config/zathura/zathurarc
+
+# rofi
+ln -snf ${BASEDIR}/rofi ~/.config/rofi

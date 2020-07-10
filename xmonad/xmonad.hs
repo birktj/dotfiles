@@ -38,7 +38,8 @@ myKeys = (\c -> M.fromList $ [ ((0, xF86XK_AudioLowerVolume), spawn "amixer -q s
                            , ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute 0 toggle")
                            , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight -inc 10")
                            , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -dec 10")
-                           , ((modMask c, xK_p), spawn "dmenu_run -l 10 -w 500 -h 30 -fn \"Source Code Pro:size=13\" -p \"> \" -dim 0.5 -o 0.9 -x 710 -y 390 -nb \"#2e3440\" -nf \"#d8dee9\" -sb \"#d8dee9\" -sf \"#2e3440\"") ]
+                           --, ((modMask c, xK_p), spawn "dmenu_run -l 10 -w 500 -h 30 -fn \"Source Code Pro:size=13\" -p \"> \" -dim 0.5 -o 0.9 -x 710 -y 390 -nb \"#2e3440\" -nf \"#d8dee9\" -sb \"#d8dee9\" -sf \"#2e3440\"") ]
+                           , ((modMask c, xK_p), spawn "rofi -show drun") ]
                            ++ [((modMask c, key), warpToScreen sc (1%2) (1%2))
                            | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]]) <+> keys def
 
