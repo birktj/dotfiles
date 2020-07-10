@@ -3,6 +3,7 @@ configuration {
     font: "Source Code Pro 13";
     show-icons: true;
     display-drun: ">";
+    matching: "fuzzy";
 }
 
 * {
@@ -15,7 +16,7 @@ configuration {
 
 window {
     fullscreen: true;
-    background-color: #2E3440aa;
+    background-color: #2E3440dd;
     padding: 200px 600px;
 }
 
