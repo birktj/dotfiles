@@ -3,7 +3,6 @@ configuration {
     font: "Source Code Pro 13";
     show-icons: true;
     display-drun: ">";
-    matching: "fuzzy";
 }
 
 * {
