@@ -41,3 +41,6 @@ ln -snf ${BASEDIR}/zathura/zathurarc ~/.config/zathura/zathurarc
 
 # rofi
 ln -snf ${BASEDIR}/rofi ~/.config/rofi
+
+# bat
+ln -snf ${BASEDIR}/bat ~/.config/bat
