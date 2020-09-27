@@ -7,7 +7,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 xrandr --auto
 xrandr --output HDMI-1 --auto --right-of eDP-1
-feh --bg-fill ~/.backgrounds/himalaya-night.jpg ~/.backgrounds/himalaya-night.jpg
+feh --bg-fill ~/.backgrounds/erebus.jpg ~/.backgrounds/erebus.jpg
 xsetroot -cursor_name left_ptr
 unclutter -grab &
 compton &
