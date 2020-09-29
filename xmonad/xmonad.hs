@@ -38,6 +38,8 @@ myKeys = (\c -> M.fromList $ [ ((0, xF86XK_AudioLowerVolume), spawn "amixer -q s
                            , ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute 0 toggle")
                            , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight -inc 10")
                            , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -dec 10")
+                           , ((0, xK_Print), spawn "screenshot /home/birk/media/screenshots")
+                           , ((shiftMask, xK_Print), spawn "screenshot -r /home/birk/media/screenshots")
                            --, ((modMask c, xK_p), spawn "dmenu_run -l 10 -w 500 -h 30 -fn \"Source Code Pro:size=13\" -p \"> \" -dim 0.5 -o 0.9 -x 710 -y 390 -nb \"#2e3440\" -nf \"#d8dee9\" -sb \"#d8dee9\" -sf \"#2e3440\"") ]
                            , ((modMask c, xK_p), spawn "rofi -show drun")
                            , ((modMask c, xK_o), spawn "rofi -show window") ]
