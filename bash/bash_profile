@@ -8,6 +8,7 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:$HOME/bin"
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
