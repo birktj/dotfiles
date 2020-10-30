@@ -66,6 +66,9 @@ let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#syntax#codeblocks#embeds#langs = ["haskell", "diagram=haskell", "diagram-haskell=haskell"]
 set conceallevel=0
 
+"Vimtex settings
+let g:vimtex_view_method = "zathura"
+
 "Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>

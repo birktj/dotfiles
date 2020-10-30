@@ -46,3 +46,6 @@
 [submodule "nvim/pack/syntax/start/idris-vim"]
 	path = nvim/pack/syntax/start/idris-vim
 	url = https://github.com/idris-hackers/idris-vim
+[submodule "nvim/pack/utils/start/vimtex"]
+	path = nvim/pack/utils/start/vimtex
+	url = https://github.com/lervag/vimtex/
