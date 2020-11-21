@@ -4,7 +4,7 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:$HOME/bin"
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.cabal/bin:$PATH"
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
