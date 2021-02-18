@@ -103,8 +103,26 @@ let g:netrw_winsize = 25
 let g:netrw_dirhistmax = 0
 
 "FZF
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Comment'],
+  \ 'bg':      ['bg', 'CursorLine'],
+  \ 'hl':      ['fg', 'Operator'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'border':  ['bg', 'CursorLine'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+
 let $FZF_DEFAULT_COMMAND = 'rg --files'
-map <C-p> :FZF<CR>
+map <C-p> :FZF --preview bat\ --color=always\ {}<CR>
 
 if has('nvim') && !exists('g:fzf_layout')
   autocmd! FileType fzf
