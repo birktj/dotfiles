@@ -13,3 +13,5 @@
     minus-style = syntax "#a04040"
     plus-style = syntax "#509050"
     line-numbers = true
+[pull]
+	ff = only
