@@ -9,6 +9,7 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
 export _JAVA_AWT_WM_NONREPARENTING=1
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx -- -keeptty &> /dev/null
