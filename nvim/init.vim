@@ -63,7 +63,7 @@ let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
 let g:pandoc#spell#enabled = 0
 let g:pandoc#syntax#conceal#use = 0
-let g:pandoc#syntax#codeblocks#embeds#langs = ["haskell", "diagram=haskell", "diagram-haskell=haskell"]
+let g:pandoc#syntax#codeblocks#embeds#langs = ["haskell", "diagram=haskell", "diagram-haskell=haskell", "tex", "tikz=tex"]
 set conceallevel=0
 
 "Vimtex settings
