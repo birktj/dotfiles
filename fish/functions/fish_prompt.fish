@@ -17,9 +17,9 @@ function fish_prompt
 
     set -l normal_color     (set_color normal)
     set -l success_color    (set_color cyan --bold) #(set_color $fish_pager_color_progress ^/dev/null; or set_color cyan)
-    set -l error_color      (set_color $fish_color_error ^/dev/null; or set_color red --bold)
-    set -l directory_color  (set_color $fish_color_quote ^/dev/null; or set_color brown)
-    set -l repository_color (set_color $fish_color_cwd ^/dev/null; or set_color green)
+    set -l error_color      (set_color $fish_color_error; or set_color red --bold)
+    set -l directory_color  (set_color $fish_color_quote; or set_color brown)
+    set -l repository_color (set_color $fish_color_cwd; or set_color green)
 
     if test $last_command_status -eq 0
         echo -n -s $success_color $fish $normal_color
@@ -29,17 +29,17 @@ function fish_prompt
 
     echo -n -s " " $directory_color $cwd $normal_color
 
-    if command git rev-parse --git-dir >/dev/null ^/dev/null
+    if command git rev-parse --git-dir >/dev/null 2>/dev/null
         set -l git_branch (
-            command git symbolic-ref --short HEAD ^/dev/null;
-            or command git show-ref --head -s --abbrev | head -n1 ^/dev/null)
+            command git symbolic-ref --short HEAD 2>/dev/null;
+            or command git show-ref --head -s --abbrev | head -n1 2>/dev/null)
 
         echo -n -s " on " $repository_color $git_branch $normal_color " "
 
         if test -n (echo (command git status --porcelain))
             echo -n -s $dirty
         else
-            set -l commit_count (command git rev-list --count --left-right "@{upstream}...HEAD" ^/dev/null)
+            set -l commit_count (command git rev-list --count --left-right "@{upstream}...HEAD" 2>/dev/null)
 
             switch "$commit_count"
                 case ""
