@@ -49,3 +49,6 @@
 [submodule "nvim/pack/utils/start/vimtex"]
 	path = nvim/pack/utils/start/vimtex
 	url = https://github.com/lervag/vimtex/
+[submodule "nvim/pack/utils/start/nvim-treesitter"]
+	path = nvim/pack/utils/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter

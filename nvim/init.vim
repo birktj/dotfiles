@@ -42,6 +42,16 @@ autocmd BufWinLeave *.* mkview!
 "autocmd InsertLeave,WinEnter * setlocal foldmethod=syntax
 "autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 
+"Treesitter setttings
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = "all",
+    highlight = {
+        enable = true
+    },
+}
+EOF
+
 "Vertical column
 "let &colorcolumn="81,".join(range(120,999),",")
 
