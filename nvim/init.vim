@@ -52,6 +52,8 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
+highlight link TSError Normal
+
 "Vertical column
 "let &colorcolumn="81,".join(range(120,999),",")
 
