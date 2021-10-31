@@ -142,6 +142,8 @@ if has('nvim') && !exists('g:fzf_layout')
     \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 endif
 
+command -nargs=1 Rg :call fzf#run(fzf#wrap({'sink': 'e', 'source': 'rg --column --line-number --no-heading --color=always <args>', 'options': ['--ansi', '--delimiter', ':', '--nth', '4..', '--preview', 'bat --color=always -r (math max \(0,(echo {} | cut -d: -f2)-15\)): -H (echo {} | cut -d: -f2) (echo {} | cut -d: -f1)']}))
+
 "Directory settings
 set noautochdir
 
