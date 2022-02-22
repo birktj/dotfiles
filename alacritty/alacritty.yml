@@ -24,6 +24,7 @@ window:
     padding:
         x: 25
         y: 25
+    opacity: 1.0
 
 # Scrollback buffer
 scrollback:
@@ -156,9 +157,6 @@ colors:
 #
 # To completely disable the visual bell, set its duration to 0.
 #
-
-# Background opacity
-background_opacity: 1.0
 
 # Mouse bindings
 #
