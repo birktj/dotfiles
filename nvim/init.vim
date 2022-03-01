@@ -147,7 +147,7 @@ function! s:open_ripgrep_file(line)
     execute "e +" . l:sline[1] . " " . l:sline[0]
 endfunction
 
-command -nargs=1 Rg :call fzf#run(fzf#wrap({'sink': function('s:open_ripgrep_file'), 'source': 'rg --column --line-number --no-heading --color=always <args>', 'options': ['--ansi', '--delimiter', ':', '--nth', '4..', '--preview', 'bat --color=always -r (math max \(0,(echo {} | cut -d: -f2)-15\)): -H (echo {} | cut -d: -f2) (echo {} | cut -d: -f1)']}))
+command -nargs=1 Rg :call fzf#run(fzf#wrap({'sink': function('s:open_ripgrep_file'), 'source': 'rg --column --line-number --no-heading --color=always <args>', 'options': ['--ansi', '--delimiter', ':', '--nth', '4..', '--preview', 'bat --color=always -r (math max ''(0,''(echo {} | cut -d: -f2)''-15)''): -H (echo {} | cut -d: -f2) (echo {} | cut -d: -f1)']}))
 
 "Directory settings
 set noautochdir
