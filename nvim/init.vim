@@ -156,3 +156,13 @@ set noautochdir
 set laststatus=2
 set statusline=%#Line#\ %f\ %5*%=%#Line#\ %l,\ %c\ 
 
+
+"Stop annoying mouse paste
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
