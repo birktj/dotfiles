@@ -52,3 +52,6 @@
 [submodule "nvim/pack/utils/start/nvim-treesitter"]
 	path = nvim/pack/utils/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "nvim/pack/lang/start/typst.vim"]
+	path = nvim/pack/lang/start/typst.vim
+	url = https://github.com/kaarmu/typst.vim
