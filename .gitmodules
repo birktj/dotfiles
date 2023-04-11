@@ -55,3 +55,6 @@
 [submodule "nvim/pack/lang/start/typst.vim"]
 	path = nvim/pack/lang/start/typst.vim
 	url = https://github.com/kaarmu/typst.vim
+[submodule "nvim/pack/lang/start/wgsl.vim"]
+	path = nvim/pack/lang/start/wgsl.vim
+	url = https://github.com/DingDean/wgsl.vim
