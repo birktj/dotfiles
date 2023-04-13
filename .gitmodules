@@ -24,7 +24,8 @@
 	url = https://github.com/wavded/vim-stylus
 [submodule "nvim/pack/colorscheme/start/nord-vim"]
 	path = nvim/pack/colorscheme/start/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim
+	url = https://github.com/nordtheme/vim
+	branch = main
 [submodule "nvim/pack/lang/rust.vim"]
 	path = nvim/pack/lang/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
